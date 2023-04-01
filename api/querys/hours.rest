@@ -1,0 +1,14 @@
+### Listar Horarios
+GET http://127.0.0.1:8000/api/horarios/list
+Accept: application/json
+Authorization: Bearer 25|LD6C1RnJzIwRCczPQtMxLNMGmeLmjNgssWnS4PkU
+
+### Listar Horario de un Curso
+GET http://127.0.0.1:8000/api/horarios/search/1/1/2
+Accept: application/json
+Authorization: Bearer 25|LD6C1RnJzIwRCczPQtMxLNMGmeLmjNgssWnS4PkU
+
+### Eliminar Horario segun ID
+DELETE  http://127.0.0.1:8000/api/horarios/519/borrar
+Accept: application/json
+Authorization: Bearer 25|LD6C1RnJzIwRCczPQtMxLNMGmeLmjNgssWnS4PkU

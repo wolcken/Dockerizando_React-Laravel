@@ -1,0 +1,19 @@
+### Login
+POST http://127.0.0.1:8000/api/login
+Accept: application/json
+Content-Type: application/json
+
+{
+    "email": "prueba@test.com",
+    "password": "1234"
+}
+
+### List Users
+GET http://127.0.0.1:8000/api/usuario/list
+Accept: application/json
+Authorization: Bearer 12|EvCmB9QxcfVL4uWaGU5NcpLpkqfgvqaR1YwdjO1s
+
+### Logout
+POST http://127.0.0.1:8000/api/usuario/logout
+Accept: application/json
+Authorization: Bearer 12|EvCmB9QxcfVL4uWaGU5NcpLpkqfgvqaR1YwdjO1s

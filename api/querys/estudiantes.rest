@@ -1,0 +1,23 @@
+### Lista de Estudiantes por Curso
+GET http://127.0.0.1:8000/api/estudiantes/buscar/1/1/1
+Accept: application/json
+Authorization: Bearer 71|AJRFrRi90FFrWmNuAFfbzsTZdLDCxPAug1v8Mupv
+
+
+### Lista de Niveles
+GET http://127.0.0.1:8000/api/niveles/list
+Accept: application/json
+Authorization: Bearer 71|AJRFrRi90FFrWmNuAFfbzsTZdLDCxPAug1v8Mupv
+
+
+### Lista de Cursos
+GET http://127.0.0.1:8000/api/cursos/list
+Accept: application/json
+Authorization: Bearer 71|AJRFrRi90FFrWmNuAFfbzsTZdLDCxPAug1v8Mupv
+
+
+### Lista de Paralelos
+GET http://127.0.0.1:8000/api/paralelos/list
+Accept: application/json
+Authorization: Bearer 71|AJRFrRi90FFrWmNuAFfbzsTZdLDCxPAug1v8Mupv
+

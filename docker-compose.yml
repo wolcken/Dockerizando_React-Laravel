@@ -1,0 +1,31 @@
+version: "3.1"
+
+services:
+  db:
+    image: postgres:12
+    env_file: .env
+    volumes:
+      - .data/pg_data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+  gui:
+    image: node:14-alpine
+    working_dir: /app
+    command: "npm run start"
+    volumes:
+      - ./gui:/app
+    ports:
+      - 3000:3000
+    depends_on:
+      - db
+  api:
+    image: api
+    build: ./api
+    working_dir: /var/www/
+    volumes: 
+      - ./api:/var/www/
+      - ./api/public/:/var/www/html/
+    ports:
+      - 8200:80
+    depends_on:
+      - db
